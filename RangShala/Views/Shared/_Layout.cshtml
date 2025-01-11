@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Rang Shala</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="~/Content/site.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Logo and Title -->
+        <div class="logo-section">
+            <img src="~/Images/logo.png" alt="Rang Shala Logo" class="logo">
+            <h1 class="rangshala-text">Rang Shala</h1>
+        </div>
+
+        <!-- Navigation Bar with Icons -->
+        <div class="nav-icons-container">
+            <!-- Left Icons -->
+            <div class="icon-row left-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="nav-bar">
+                <ul class="menu">
+                    <li>@Html.ActionLink("About Us", "About", "Home")</li>
+                    <li>@Html.ActionLink("Artwork", "Artwork", "Home")</li>
+                    <li>@Html.ActionLink("Artist", "Artist", "Home")</li>
+                    <li>@Html.ActionLink("Bespoke Services", "Bespoke", "Home")</li>
+                    <li>@Html.ActionLink("Join Us", "Join", "Home")</li>
+                    <li>@Html.ActionLink("Curator Consult", "Consult", "Home")</li>
+                </ul>
+            </nav>
+
+            <!-- Right Icons -->
+            <div class="icon-row right-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-comment-dots"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    <!-- Image and Text Section -->
+    <div class="about-section">
+        <div class="back1-image-container">
+            <img src="~/Images/Back1.jpg" alt="Back1 Image" class="back1-image">
+        </div>
+        <div class="about-content">
+            <!-- Decorative line -->
+            <div class="decorative-line"></div>
+            <h1>Welcome, to the<br /> Rang Shala<br /></h1>
+            <h3>A Space For Creativity to Break Free. Where Every Artist Approach Finds a Home</h3>
+
+            <p>
+                The Rang Shala is a project born out of a passion for creative excellence. Its creators—Niyati Agravat and Ayush Babariya—are synonymous with art, culture, and innovation.
+                Three distinct, dynamic, and fiercely individualistic styles come together to form this unique collective. Ultimately, a love for the arts is the roof above this reflective, lively house.
+            </p>
+            <p>
+                Every form of visual expression has an important place in The Ra. This is a home of multiple art forms, housing everything from pieces inspired by nature that take you back to the basics, to photographs that capture and immortalize fleeting moments.
+            </p>
+            <p>
+                At the heart of this endeavor is a commitment to the Indian artistic community. To that end, The Rang Shala keeps its doors open for artists from all over the country, giving homegrown talent an opportunity to showcase their work on a global platform.
+            </p>
+            <p>Once again, welcome to The Rang Shala. We are delighted to have you here.</p>
+        </div>
+    </div>
+
+    <!-- Featured Artist Section -->
+    <div class="featured-artist-section">
+        <div class="decorative-line"></div>
+        <h1>Featured Artist</h1>
+        <div class="artist-grid">
+            <div class="artist-card">
+                <img src="~/Images/NiyatiAgravat.jpeg" alt="Niyati Agravat" class="artist-photo">
+                <h3>Niyati Agravat</h3>
+                <button class="explore-button">Explore</button>
+            </div>
+            <div class="artist-card">
+                <img src="~/Images/AyushiBabariya.jpeg" alt="Ayushi Babariya" class="artist-photo">
+                <h3>Ayushi Babariya</h3>
+                <button class="explore-button">Explore</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Rang Shala. All rights reserved.</p>
+    </footer>
+</body>
+</html>
