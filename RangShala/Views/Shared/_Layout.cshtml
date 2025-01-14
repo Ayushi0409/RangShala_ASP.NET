@@ -20,7 +20,7 @@
         <div class="nav-icons-container">
             <!-- Left Icons -->
             <div class="icon-row left-icons">
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/rangshaa1a/" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
@@ -34,12 +34,19 @@
                     <li>@Html.ActionLink("Bespoke Services", "Bespoke", "Home")</li>
                     <li>@Html.ActionLink("Join Us", "Join", "Home")</li>
                     <li>@Html.ActionLink("Curator Consult", "Consult", "Home")</li>
+
                 </ul>
             </nav>
 
+
             <!-- Right Icons -->
             <div class="icon-row right-icons">
-                <a href="#"><i class="fas fa-search"></i></a>
+                <form action="/Home/Search" method="get" class="search-form">
+                    <input type="text" name="query" class="search-input" placeholder="Search..." />
+                    <button type="submit" class="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
                 <a href="#"><i class="fas fa-comment-dots"></i></a>
                 <a href="#"><i class="fas fa-user"></i></a>
                 <a href="#"><i class="fas fa-shopping-cart"></i></a>
@@ -94,7 +101,39 @@
             </div>
         </div>
     </div>
+    <!-- Why RangShala Section -->
+    <div class="why-rangshala-section">
+        <!-- Decorative Line -->
+        <div class="decorative-line"></div>
 
+        <!-- Title -->
+        <h1 class="why-title">Why RangShala?</h1>
+
+        <!-- Images and Text in One Row -->
+        <div class="why-row">
+            <!-- Genuine -->
+            <div class="why-item">
+                <img src="~/Images/Genuine.jpeg" alt="Genuine Artwork" class="why-image">
+                <h3>Genuine</h3>
+                <p>Take home a unique piece of art, sourced directly from the artists and personally reviewed and verified by the founders.</p>
+            </div>
+
+            <!-- Distinctive -->
+            <div class="why-item">
+                <img src="~/Images/Distinctive.jpeg" alt="Distinctive Artwork" class="why-image">
+                <h3>Distinctive</h3>
+                <p>The House of Creativity is driven by artists who truly believe in the power of all things visual. Become an owner of exclusive artwork made by passionate, talented creators with a unique understanding of creative expression.</p>
+            </div>
+
+            <!-- Vibrant -->
+            <div class="why-item">
+                <img src="~/Images/Vibrant.png" alt="Vibrant Artwork" class="why-image">
+                <h3>Vibrant</h3>
+                <p>Pick and choose from a range of diverse and dynamic artistic styles - all under one roof. Brighten up your office or add a touch of colour to your home with prints and paintings from upcoming as well as established artists across India.</p>
+            </div>
+        </div>
+    </div>
+    
 
     <!-- Footer -->
     <footer>

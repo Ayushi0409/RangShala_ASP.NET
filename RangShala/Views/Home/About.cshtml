@@ -1,9 +1,7 @@
 ﻿@{
-    ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Ensure it's using the main layout
 }
-<main aria-labelledby="title">
-    <h2 id="title">@ViewBag.Title.</h2>
-    <h3>@ViewBag.Message</h3>
 
-    <p>Use this area to provide additional information.</p>
-</main>
+@section MainContent {
+    <!-- Your main content for About Us goes here, or leave it blank if it’s just a redirect -->
+}

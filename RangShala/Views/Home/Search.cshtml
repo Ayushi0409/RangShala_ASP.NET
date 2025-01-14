@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Search Results";
+}
+
+<main>
+    <h2>Search Results for: "@ViewBag.Query"</h2>
+
+    @if (ViewBag.SearchResults != null && ViewBag.SearchResults.Count > 0)
+    {
+        <ul class="search-results">
+            @foreach (var item in ViewBag.SearchResults as List<string>)
+            {
+                <li>@item</li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>No results found for your search query.</p>
+    }
+</main>

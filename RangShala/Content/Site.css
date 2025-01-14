@@ -203,13 +203,21 @@ a {
         margin-bottom: 20px;
     }
 
+/* Artist Photo with Hover Effect */
 .artist-photo {
     width: 100%;
     height: auto;
     border-radius: 0; /* Remove rounded corners */
     margin-bottom: 15px;
     border: 3px solid #ccc; /* Optional: Add a frame-like effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
+
+    .artist-photo:hover {
+        transform: scale(1.05); /* Slight zoom effect */
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+        border-color: #153448; /* Change border color */
+    }
 
 .artist-grid {
     display: flex;
@@ -272,6 +280,107 @@ a {
     .explore-button:hover {
         background-color: #007bff;
     }
+
+/* Why RangShala Section */
+.why-rangshala-section {
+    text-align: left;
+    padding: 40px 50px;
+    background-color: #fff;
+    margin: 40px 0;
+}
+
+.why-title {
+    text-align: left;
+    font-size: 24px;
+    color: #153448;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Why Row - All Images in One Row */
+.why-row {
+    display: flex;
+    justify-content: space-between; /* Space between each item */
+    gap: 20px; /* Add spacing between items */
+    align-items: flex-start; /* Align items at the top */
+}
+
+/* Why Item */
+.why-item {
+    text-align: center; /* Center-align each image and text */
+    max-width: 300px; /* Limit the width of each item */
+}
+
+.why-image {
+    width: 200px /* Make the image responsive */
+    height: 250px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensure the image doesn't stretch */
+    margin-bottom: 10px; /* Space between the image and text */
+    border: none; /* Remove any border */
+    border-radius: 0; /* Ensure no rounded corners */
+}
+
+.why-item h3 {
+    font-size: 18px;
+    color: #153448;
+    margin-bottom: 10px;
+}
+
+.why-item p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+/* Search input and button styles */
+.search-form {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-input {
+    padding: 8px 15px;
+    font-size: 16px;
+    border: 2px solid #4E4E61;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.search-button {
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    padding: 8px;
+    cursor: pointer;
+}
+
+    .search-button i {
+        font-size: 20px;
+        color: #4E4E61;
+    }
+
+.search-results {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+    .search-results li {
+        background-color: #f1f1f1;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .search-results li:hover {
+            background-color: #ddd;
+        }
+
+
+
 
 
 /* Footer */

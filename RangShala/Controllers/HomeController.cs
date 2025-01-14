@@ -1,7 +1,27 @@
-﻿using System.Web.Mvc;
+﻿using System.Collections.Generic;
+using System.Linq; // Add this line for LINQ
+using System.Web.Mvc;
 
 public class HomeController : Controller
 {
+    public ActionResult Search(string query)
+    {
+        // Perform search logic here. For simplicity, we'll assume a list of items to search through.
+        var allItems = new List<string>
+        {
+            "Acrylic Painting", "Oil Painting", "Drawings", "Artist", "Anime", "Mandala Art"
+        };
+
+        // Filter the items based on the query (case-insensitive)
+        var filteredItems = allItems.Where(item => item.ToLower().Contains(query.ToLower())).ToList();
+
+        // Pass the search results to the view
+        ViewBag.SearchResults = filteredItems;
+        ViewBag.Query = query;
+
+        return View();
+    }
+
     public ActionResult Index()
     {
         return View();
@@ -9,7 +29,8 @@ public class HomeController : Controller
 
     public ActionResult About()
     {
-        return View();
+        ViewBag.Title = "About Us";
+        return View("Index"); // This will load the same view as your home page.
     }
 
     public ActionResult Artwork()
@@ -36,4 +57,18 @@ public class HomeController : Controller
     {
         return View();
     }
+    public ActionResult AcrylicPaintings()
+    {
+        // You can fetch painting data dynamically from a database here.
+        return View();
+    }
+    public ActionResult Drawings()
+    {
+        // You can fetch painting data dynamically from a database here.
+        return View();
+    }
+
+
+
+
 }
