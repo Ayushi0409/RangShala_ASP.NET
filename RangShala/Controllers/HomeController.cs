@@ -67,7 +67,26 @@ public class HomeController : Controller
         // You can fetch painting data dynamically from a database here.
         return View();
     }
-
+    public ActionResult MandalaArt()
+    {
+        // You can fetch painting data dynamically from a database here.
+        return View();
+    }
+    public ActionResult Anime()
+    {
+        // You can fetch painting data dynamically from a database here.
+        return View();
+    }
+    public ActionResult OilPainting()
+    {
+        // You can fetch painting data dynamically from a database here.
+        return View();
+    }
+    public ActionResult ArtworkGallery()
+    {
+        // You can fetch painting data dynamically from a database here.
+        return View();
+    }
 
 
 

@@ -147,6 +147,15 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\Acraylic Painting.jpeg" />
+    <Content Include="Images\anime1.jpg" />
+    <Content Include="Images\anime2.jpg" />
+    <Content Include="Images\anime3.jpg" />
+    <Content Include="Images\anime4.jpg" />
+    <Content Include="Images\anime5.jpg" />
+    <Content Include="Images\anime6.jpg" />
+    <Content Include="Images\anime7.jpg" />
+    <Content Include="Images\anime8.jpg" />
+    <Content Include="Images\anime9.jpg" />
     <Content Include="Images\animee.jpg" />
     <Content Include="Images\AyushiBabariya.jpeg" />
     <Content Include="Images\Back1.jpg" />
@@ -171,10 +180,29 @@
     <Content Include="Images\lady.jpg" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\mandala art.jpg" />
+    <Content Include="Images\mandala1.jpg" />
+    <Content Include="Images\mandala2.jpg" />
+    <Content Include="Images\mandala3.jpg" />
+    <Content Include="Images\mandala4.jpg" />
+    <Content Include="Images\mandala5.jpg" />
+    <Content Include="Images\mandala6.jpg" />
+    <Content Include="Images\mandala7.jpg" />
+    <Content Include="Images\mandala8.jpg" />
+    <Content Include="Images\mandala9.jpg" />
     <Content Include="Images\naturee.jpg" />
     <Content Include="Images\NightPai.jpg" />
     <Content Include="Images\NiyatiAgravat.jpeg" />
     <Content Include="Images\oil Painting.jpeg" />
+    <Content Include="Images\oil1.jpg" />
+    <Content Include="Images\oil10.jpg" />
+    <Content Include="Images\oil2.jpg" />
+    <Content Include="Images\oil3.jpg" />
+    <Content Include="Images\oil4.jpg" />
+    <Content Include="Images\oil5.jpg" />
+    <Content Include="Images\oil6.jpg" />
+    <Content Include="Images\oil7.jpg" />
+    <Content Include="Images\oil8.jpg" />
+    <Content Include="Images\oil9.jpg" />
     <Content Include="Images\owl.jpg" />
     <Content Include="Images\Panihari.jpg" />
     <Content Include="Images\panihari1.jpg" />
@@ -219,6 +247,10 @@
     <Content Include="Views\Home\Search.cshtml" />
     <Content Include="Views\Home\AcrylicPaintings.cshtml" />
     <Content Include="Views\Home\Drawings.cshtml" />
+    <Content Include="Views\Home\MandalaArt.cshtml" />
+    <Content Include="Views\Home\Anime.cshtml" />
+    <Content Include="Views\Home\OilPainting.cshtml" />
+    <Content Include="Views\Home\ArtworkGallery.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
