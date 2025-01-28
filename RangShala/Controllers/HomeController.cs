@@ -87,7 +87,14 @@ public class HomeController : Controller
         // You can fetch painting data dynamically from a database here.
         return View();
     }
-
-
-
+    public ActionResult LoginRegister()
+    {
+        // You can fetch painting data dynamically from a database here.
+        return View();
+    }
+    public ActionResult BeSpokeservice()
+    {
+        // You can fetch painting data dynamically from a database here.
+        return View();
+    }
 }

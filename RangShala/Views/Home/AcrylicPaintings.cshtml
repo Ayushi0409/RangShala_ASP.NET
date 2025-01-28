@@ -236,5 +236,28 @@
             </div>
         </div>
     </div>
+    !-- Add this script at the bottom -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        $(".add-to-cart-btn").click(function () {
+            var itemName = $(this).closest(".artwork-card").find("h3").text();
+            var itemPrice = $(this).closest(".artwork-card").find("p:last").text().replace("INR ", "");
+
+            $.ajax({
+                url: '@Url.Action("AddToCart", "Cart")',
+                type: 'POST',
+                contentType: "application/json",
+                data: JSON.stringify({ name: itemName, price: itemPrice }),
+                success: function (response) {
+                    alert(response.message); // Show confirmation
+                },
+                error: function () {
+                    alert("Failed to add to cart. Try again.");
+                }
+            });
+        });
+    });
+    </script> 
 </body>
 </html>

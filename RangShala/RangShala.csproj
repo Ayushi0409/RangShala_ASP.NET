@@ -251,6 +251,8 @@
     <Content Include="Views\Home\Anime.cshtml" />
     <Content Include="Views\Home\OilPainting.cshtml" />
     <Content Include="Views\Home\ArtworkGallery.cshtml" />
+    <Content Include="Views\Home\LoginRegister.cshtml" />
+    <Content Include="Views\Home\BeSpokeservice.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
