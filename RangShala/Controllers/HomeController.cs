@@ -97,4 +97,12 @@ public class HomeController : Controller
         // You can fetch painting data dynamically from a database here.
         return View();
     }
+    public ActionResult Ayushi()
+    {
+        return View();
+    }
+    public ActionResult Niyati()
+    {
+        return View();
+    }
 }

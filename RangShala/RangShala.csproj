@@ -164,9 +164,11 @@
     <Content Include="Images\bird_artwork.jpeg" />
     <Content Include="Images\buddha.jpg" />
     <Content Include="Images\cat.jpg" />
+    <Content Include="Images\choice.jpeg" />
     <Content Include="Images\deer.jpg" />
     <Content Include="Images\Distinctive.jpeg" />
     <Content Include="Images\Drawings.jpeg" />
+    <Content Include="Images\Expert Advise.png" />
     <Content Include="Images\eye.jpg" />
     <Content Include="Images\Ganpati.jpg" />
     <Content Include="Images\Ganpatibappa.jpg" />
@@ -176,6 +178,8 @@
     <Content Include="Images\HanumanDada.jpg" />
     <Content Include="Images\HillView.jpg" />
     <Content Include="Images\HousePainting.jpg" />
+    <Content Include="Images\Idea.png" />
+    <Content Include="Images\Implementation.png" />
     <Content Include="Images\ink.jpg" />
     <Content Include="Images\lady.jpg" />
     <Content Include="Images\logo.png" />
@@ -253,6 +257,8 @@
     <Content Include="Views\Home\ArtworkGallery.cshtml" />
     <Content Include="Views\Home\LoginRegister.cshtml" />
     <Content Include="Views\Home\BeSpokeservice.cshtml" />
+    <Content Include="Views\Home\Ayushi.cshtml" />
+    <Content Include="Views\Home\Niyati.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
